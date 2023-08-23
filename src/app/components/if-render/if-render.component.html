@@ -1,0 +1,10 @@
+<!-- <p>if-render works!</p> -->
+<div class="class" >
+  <div *ngIf="canShow">Estamos mostrando isso porque foi permitido.</div>
+  <h3 *ngIf="nome === 'Ediberto'; else nomeNaoEncontrado" id="idUser">Nome do usuário: {{ nome }}</h3>
+
+  <ng-template #nomeNaoEncontrado>
+    <h3>Nome não encontrado.</h3>
+  </ng-template>
+</div>
+

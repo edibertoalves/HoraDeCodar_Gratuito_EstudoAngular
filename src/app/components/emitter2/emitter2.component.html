@@ -1,0 +1,8 @@
+<!-- <p>emitter2 works!</p> -->
+
+<!-- link para consulta: https://ultimatecourses.com/blog/component-events-event-emitter-output-angular-2 -->
+
+<div class="class">
+  <h3>o número atual é {{ currentNumber }} </h3>
+  <app-inc-dec-number [count]="currentNumber" (changeNumber)="onChangeNumber($event)"></app-inc-dec-number>
+</div>
